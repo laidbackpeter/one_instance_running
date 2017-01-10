@@ -1,0 +1,8 @@
+README
+======
+
+++ Description
+	- The main function ensures that only one instances of the script is running. Utilises the PID
+
+++ Risk
+	- If the script is not killed gracefully, the pid file will not be deleted. Meaning if you try to start the script again it will think that there is another instance already running.
